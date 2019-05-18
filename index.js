@@ -1,13 +1,17 @@
   // enter numbers
   // click button
   function calculateAverage() {
-    console.log(calculateAverage)
-    const stringNumbers = ""
-    const stringArray = stringNumbers.split(" ")
-    let num = 0
+    const stringNumbers = "34,545,78"
+    const stringArray = stringNumbers.split(",")
+    const numOfEntries = stringArray.length
+    console.log(stringArray)
+    let totalNum = 0
     for (const item of stringArray) {
-      num += parseInt(item)
+      totalNum += parseInt(item)
     }
+    const ave = totalNum/numOfEntries
+    console.log(ave)
+    
   }
   // calculate averageAndSet
      // get the numbers
