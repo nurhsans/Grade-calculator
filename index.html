@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Average Exam Results</title>
+  <link href="styles/bootstrap.min.css" rel="stylesheet" />
+  <link href="styles/styles.css" rel='stylesheet' />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class='display-1'>Exam Results Average Calculator</h1>
+        <p class="lead">
+          <blockquote class="blockquote">
+            <p class="mb-0">You now have a website to cry because of your grades</p>
+          </blockquote>
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row mt-3">
+      <div class="col-12">
+        <div class="input-group input-group-lg">
+          <input  max='100' min='0' id='scores' type="text" placeholder='Enter your score eg. 65, 34, 88'
+            class="form-control" />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" onclick="calculateAverage()" >Calculate</button>
+            <button class="btn btn-outline-danger" type="button">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3 justify-content-center">
+      <h1 id='grade'>Enter results to begin...</h1>
+    </div>
+  </div>
+</body>
+
+<script>
+  // enter numbers
+  // click button
+  function calculateAverage() {
+    console.log(calculateAverage)
+    const stringNumbers = ""
+    const stringArray = stringNumbers.split(" ")
+    let num = 0
+    for (const item of stringArray) {
+      num += parseInt(item)
+    }
+  }
+  // calculate averageAndSet
+     // get the numbers
+     // add the numbers
+     // divide numbers by the amt of numbers
+    // set innerhtml with the answer
+
+
+  </script>
+
+</html>
