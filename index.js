@@ -1,7 +1,7 @@
   // enter numbers
   // click button
   function calculateAverage() {
-    const stringNumbers = "34,545,78"
+    const stringNumbers = document.getElementById("scores").value
     const stringArray = stringNumbers.split(",")
     const numOfEntries = stringArray.length
     console.log(stringArray)
@@ -10,8 +10,7 @@
       totalNum += parseInt(item)
     }
     const ave = totalNum/numOfEntries
-    console.log(ave)
-    
+    document.getElementById("average").innerHTML = ave
   }
   // calculate averageAndSet
      // get the numbers
